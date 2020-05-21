@@ -2,8 +2,8 @@ $("#language_selector").html("<%= escape_javascript(render 'shared/language_sele
 $("#contact_form").html("<%= escape_javascript(render 'contact_messages/form', contact_message: @contact_message) %>");
 
 $("select#language_select").on('change', function(){
-	var lang = $(this).val()
-	languageChangeAjaxCall(lang)
+  var lang = $(this).val()
+  languageChangeAjaxCall(lang)
 })
 
 $("form#new_contact").on('submit', function(e){
