@@ -6,6 +6,7 @@ Bundler.require(*Rails.groups)
 module ContactMessageFinal
   class Application < Rails::Application
     config.load_defaults 5.2
+    config.active_job.queue_adapter = :delayed_job
     config.before_configuration do
       env_file = File.join(Rails.root, 'config', 'local_env.yml')
       YAML.load(File.open(env_file)).each do |key, value|
