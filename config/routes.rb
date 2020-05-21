@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/contacts' => "contact_messages#new"
+  resources :contact_messages, only: :new
+  root "contact_messages#new"
+  namespace :api do
+    resources :contact_messages, only: [:create]
+  end
 end

@@ -517,3 +517,11 @@ textarea.input100 {
     opacity: 1;
   }
 }
+
+span.response_message.success{
+  color: green;
+}
+
+span.response_message.failure{
+  color: #c80000;
+}
