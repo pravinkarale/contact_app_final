@@ -13,5 +13,9 @@ module ContactMessageFinal
         ENV[key.to_s] = value
       end if File.exists?(env_file)
     end
+    # add available locales
+    config.i18n.available_locales = [:en, :es]
+    # make english as default locale
+    config.i18n.default_locale = :en
   end
 end

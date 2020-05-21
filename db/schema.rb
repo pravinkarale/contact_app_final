@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_21_151954) do
+ActiveRecord::Schema.define(version: 2020_05_21_170006) do
 
   create_table "contact_messages", options: "ENGINE=MyISAM DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "first_name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2020_05_21_151954) do
     t.text "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "locale", default: "en"
   end
 
   create_table "delayed_jobs", options: "ENGINE=MyISAM DEFAULT CHARSET=utf8", force: :cascade do |t|
