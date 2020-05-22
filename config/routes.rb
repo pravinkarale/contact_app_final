@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   namespace :api do
     resources :contact_messages, only: [:create]
   end
+  match '*unmatched_route', :to => 'application#route_not_found', via: [:get, :post]
 end

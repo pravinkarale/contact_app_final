@@ -23,6 +23,8 @@
 
 * First Name, Lat Name, Email, Message are the compulsory fields in 'send message' form.
 
+* 404 error is handled for unknown url
+
 * Added Rspec for model and api controller testing
    
   - model Testing :- Written test cases for model validation to test below compulsory fields 
