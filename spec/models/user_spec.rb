@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
 
-  context 'validation tests' do 
+  context 'validation tests' do
   	it 'ensure first name presence' do
   		user = User.new(last_name: 'desouza', email: 'mariad79@gmail.com', message: 'please revert me within a week').save
   		expect(user).to eq(false)
