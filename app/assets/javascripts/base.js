@@ -5,7 +5,7 @@ $(document).ready(function(){
     languageChangeAjaxCall(lang)
   })
   // submit form
-  $("form#new_contact").on('submit', function(e){
+  $("form#new_user").on('submit', function(e){
     e.preventDefault();
     sendMessage()
   })
@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 function sendMessage(){
   // post serialize form when form gets submitted
-  $.post("/api/contact_messages", $('#new_contact').serialize(), function(data) {
+  $.post("/api/users", $('#new_user').serialize(), function(data) {
     if (data['status'] == 'failure'){
       $('span.response_message').removeClass('success')
       $('span.response_message').not(".failure").addClass('failure')
@@ -24,7 +24,7 @@ function sendMessage(){
       $('span.response_message').removeClass('failure')
       $('span.response_message').not(".success").addClass('success')
       $('span.response_message').text(data['message'])
-      $("#contact_message_first_name, #contact_message_last_name, #contact_message_email, #contact_message_phone, #contact_message_message").val("");
+      $("#user_first_name, #user_last_name, #user_email, #user_phone, #user_message").val("");
     }
   });
 }
@@ -32,7 +32,7 @@ function sendMessage(){
 function languageChangeAjaxCall(lang){
   // ajax call to render form in selected language
   $.ajax({
-    url: "/contact_messages/new",
+    url: "/",
     data: {locale: lang}
   })
 }

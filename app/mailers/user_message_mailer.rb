@@ -1,6 +1,6 @@
 class UserMessageMailer < ApplicationMailer
   def user_message(opts)
-  	@contact_message = opts 
-    mail(subject: "#{@contact_message.full_name} sent you the message")
+  	@user = opts 
+    mail(subject: "#{@user.full_name} sent you the message")
   end
 end

@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe Api::ContactMessagesController, type: 'request' do
-	describe 'POST /api/contact_messages' do
+RSpec.describe Api::UsersController, type: 'request' do
+	describe 'POST /api/users' do
 		let(:valid_params) do
       {
-         contact_message: {
+        user: {
           first_name: "maria",
           last_name: "Dsouza",
           email: "mariad@gmail.com",
@@ -16,7 +16,7 @@ RSpec.describe Api::ContactMessagesController, type: 'request' do
 
     let(:invalid_params) do
       {
-         contact_message: {
+        user: {
           first_name: "maria",
           last_name: "Dsouza",
           email: "mariad@gmail.com",
@@ -25,18 +25,17 @@ RSpec.describe Api::ContactMessagesController, type: 'request' do
       }
     end
 
-		it 'send message with all required parameters' do
-			expect { post "/api/contact_messages", params: valid_params }.to change(ContactMessage, :count).by(+1)
+		it 'send message with valid data' do
+			expect { post "/api/users", params: valid_params }.to change(User, :count).by(+1)
 			resp = JSON.parse(response.body)
 			expect(resp['result']).to eq 'success'
 		end
 
-		it 'send message with insufficient parameters' do
-			post "/api/contact_messages", params: invalid_params
+		it 'send message with invalid data' do
+			post "/api/users", params: invalid_params
 			resp = JSON.parse(response.body)
 			expect(resp['result']).to eq 'failure'
 		end
-		
 	end
 
 end
