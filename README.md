@@ -23,18 +23,20 @@
 
 * First Name, Lat Name, Email, Message are the compulsory fields in 'send message' form.
 
-* 404 error is handled for unknown url
-
-* Added Rspec for model and api controller testing
+* Added Rspec for model, api controller and views testing
    
   - model Testing :- Written test cases for model validation to test below compulsory fields 
     first_name, last_name, email, message
   - Api Testing :- Trying to save record with valid & invalid data.
+  - views Testing :- Tested page rendering in selected language
 
 * To test model validation, run command rspec spec/models
 
 * To test API, run command rspec spec/controllers
 
+* To test localization run command rspec spec/views 
+
+* To see Coverage report open file from coverage/index.html
 
 * Below are the curl command to test Api
 

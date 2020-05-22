@@ -93,8 +93,4 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 
-  # config.after(:suite) do
-  #   RSpec::Puppet::Coverage.report!
-  # end
-
 end
