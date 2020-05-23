@@ -1,5 +1,6 @@
 es:
-  language: 'Spanish'
+  language: 'Idioma'
+  selected_language: 'Spanish'
   validation:
     error: "Complete todos los campos obligatorios con un formato válido."
     success: "Mensaje enviado con éxito"

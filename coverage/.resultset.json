@@ -157,26 +157,6 @@
           1
         ]
       },
-      "/home/pravin-karale/pravin/assignments/contact_message_final/config/initializers/inflections.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/home/pravin-karale/pravin/assignments/contact_message_final/config/initializers/mime_types.rb": {
         "lines": [
           null,
@@ -210,25 +190,6 @@
           1,
           1,
           null,
-          1,
-          null
-        ]
-      },
-      "/home/pravin-karale/pravin/assignments/contact_message_final/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/pravin-karale/pravin/assignments/contact_message_final/app/helpers/contact_messages_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/pravin-karale/pravin/assignments/contact_message_final/app/helpers/homes_helper.rb": {
-        "lines": [
-          1,
           null
         ]
       },
@@ -400,6 +361,6 @@
         ]
       }
     },
-    "timestamp": 1590161906
+    "timestamp": 1590238138
   }
 }

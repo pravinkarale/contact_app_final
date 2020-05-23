@@ -12,7 +12,7 @@
     </br><br/>
   </p>
   <p>
-    Below is the message sent by <%= @user.full_name %> in <%= I18n.t('language', locale: @user.locale.to_sym) %> </br></br>
+    Below is the message sent by <%= @user.full_name %> in <%= I18n.t('selected_language', locale: @user.locale.to_sym) %> </br></br>
     <%= @user.message %>
   </p>
 </div>

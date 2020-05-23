@@ -1,5 +1,6 @@
 en:
-  language: 'English'
+  language: 'Language'
+  selected_language: 'English'
   validation:
     error: "Please fill up all mandatory fields with valid format"
     success: "Message sent successfully"

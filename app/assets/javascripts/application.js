@@ -20,10 +20,6 @@
 //= require bootstrap/tooltip
 //= require animsition
 //= require animsition.min
-//= require countdowntime
-//= require daterangepicker
-//= require moment
-//= require moment.min
 //= require select2
 //= require select2.min
 //= require_tree .

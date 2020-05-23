@@ -1,5 +1,7 @@
 $(document).ready(function(){
   // render form in selected language on language dropdown changes
+  $('select#language_select').select2({ width: '7%', minimumResultsForSearch: -1
+ })
   $("select#language_select").on('change', function(){
     var lang = $(this).val()
     languageChangeAjaxCall(lang)
